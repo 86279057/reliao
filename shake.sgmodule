@@ -1,0 +1,7 @@
+#!name=热聊打卡
+[Script]
+
+reliao.js = type=http-request,pattern=https://hotchat-punch.iqiyi.com/rest/biz/punch/public/v3/shak,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/86279057/test/main/reliao.js,script-update-interval=300
+
+[MitM]
+hostname = %APPEND% *.iqiyi.*
