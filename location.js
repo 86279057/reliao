@@ -15,7 +15,7 @@ let body = JSON.parse($request.body);
 
 //body.longitude ='116.320761'
 //body.latitude ='39.991122'
-body.vpn = 'false'
+body.vpn = 'false';
 body = JSON.stringify(body);
 console.log(body);
 $done({body});
